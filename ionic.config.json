@@ -1,0 +1,7 @@
+{
+  "name": "old-lady-game",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
