@@ -1,0 +1,7 @@
+<ion-grid fixed>
+  <ion-row *ngFor="let row of board; let rowIndex = index">
+    <ion-col *ngFor="let colValue of row; let colIndex = index">
+      <square [row]="rowIndex" [col]="colIndex" [value]="colValue"></square>
+    </ion-col>
+  </ion-row>
+</ion-grid>
