@@ -5,17 +5,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { SquareComponent } from '../components/square/square';
 import { GameProvider } from '../providers/game/game';
-import { BoardComponent } from '../components/board/board';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage,
-    SquareComponent,
-    BoardComponent
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -23,14 +17,13 @@ import { BoardComponent } from '../components/board/board';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    GameProvider
+    GameProvider,
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

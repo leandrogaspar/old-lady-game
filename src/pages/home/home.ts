@@ -1,8 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
+import { NavController, AlertController, IonicPage } from 'ionic-angular';
 import { GameProvider, Players, GameState } from '../../providers/game/game';
 import { Subscription } from 'rxjs/Subscription';
 
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
